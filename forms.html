@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Анкетка</title>
+ </head>
+ <body>
+ 	<h1>Урок "Формы": теги и их атрибуты</h1>
+ 	<h2>Расскажите немного о себе...</h2>
+ 	<h4 style="font-weight: normal">Попробуйте создать аналогичную форму. Попробовали :)</h4>
+<form action="#" method="POST">
+<fieldset>
+	<legend>
+	<b>Коротко о себе</b>
+</legend>
+<p>Имя: <input type="text" name="firstname" id="firtn"></p>
+<p>Фамилия: <input type="text" name="lastname" id="lastn"></p>
+ <p>Пол: <input id="male" type="radio" name="gender" checked> 
+   <label for="male">мужской</label>
+   <input id="female" type="radio" name="gender">
+   <label for="female">женский</label></p>
+<p>Возраст: <input type="text" name="age" id="age" size="4"> лет</p>
+</fieldset>
+<fieldset>
+	<legend>
+<b>Подробнее о себе</b> 
+</legend>
+<p class="indent"><input id="boy" type="radio" name="gender2" value="boy" checked >
+<label for="boy">Молодой человек</label></p>
+<p class="indent"><input id="girl" type="radio" name="gender2" value="girl">
+<label for="girl">Девушка</label></p>
+<p class="indent"><input type="text" name="dob">Дата рождения</p>
+<p class="indent"><input type="text" name="marriage">Семейное положение</p>
+<p class="indent"><input type="text" name="status">Социальный статус</p>
+<p class="indent"><input type="text" name="place">Местоположение</p>
+<p><b>Что Вы обычно делаете на выходных:</b></p>
+<p class="indent"><input id="sleep" type="checkbox" name="weekend1" value="sleeping">
+  <label for="sleep">Сплю</label></p>
+<p class="indent"><input id="walk" type="checkbox" name="weekend2" value="walking">
+  <label for="walk">Гуляю</label></p>
+<p class="indent"><input id="fish" type="checkbox" name="weekend3" value="fishing">
+  <label for="fish">Хожу на рыбалку</label></p>
+<p class="indent"><input id="play" type="checkbox" name="weekend4" value="playing">
+  <label for="play">Играю в игры</label></p>
+<p><b>Расказать о формах в книге, посвященной HTML:</b></p>
+<select name="tell">
+	<option value="bla">bla</option>
+	<option value="blabla">blabla</option>
+</select>
+<p><b>Сколько книг Вы прочитали за свою жизнь:</b></p>
+<p class="indent"><input id="book_1" type="radio" name="book" value="book10">
+  <label for="book_1">0-10</label></p>
+<p class="indent"><input id="book_2" type="radio" name="book" value="book20">
+  <label for="book_2">11-20</label></p>
+<p class="indent"><input id="book_3" type="radio" name="book" value="book50">
+  <label for="book_3">21-50</label></p>
+<p class="indent2"><input id="book_4" type="radio" name="book" value="book50">
+  <label for="book_4">50+</label></p>
+<p class="indent"><b>Ваши комментарии:</b></p>
+<p class="indent"><textarea name="comment" cols="40" rows="3"></textarea></p>
+<p><select size="3" multiple name="pos"> <option value="first">Первая позиция</option>
+    <option selected value="second">Вторая позиция</option>
+    <option value="third">Третья позиция</option> 
+</select></p>
+</fieldset>
+<fieldset>
+	<legend><b>И в заключении</b></legend>
+<p class="indent2"><input type="text" placeholder="Это поле было введено для Вас"></p>
+<p class="indent"><b>Email:</b></p>
+<p class="indent2"><input type="Email"></p>
+<p class="indent"><b>Хотите подписаться на самую модную рассылку спама?</b></p>
+<p class="indent2"><em>Выберите категории</em></p>
+<p class="indent"><input id="spam_1" type="checkbox" name="
+category1" value="
+equipment">
+<label for="spam_1">Оборудование</label></p>
+<p class="indent"><input id="spam_2" type="checkbox" name="
+category2" value="dinner">
+<label for="spam_2">Как приготовить обеды</label></p>
+<p class="indent"><input id="spam_3" type="checkbox" name="
+category3" value="million">
+<label for="spam_3">Заработай миллион за два дня!</label></p>
+<p><b>На сколько сложная задача:</b></p>
+<p class="indent"><input id="how_1" type="radio" name="task" value="no" checked>
+  <label for="how_1">Совсем нет</label></p>
+<p class="indent"><input id="how_2" type="radio" name="task" value="so">
+  <label for="how_2">Так себе</label></p>
+<p class="indent"><input id="how_3" type="radio" name="task" value="hard">
+  <label for="how_3">Еле справились</label></p>
+</fieldset>
+<p><input type="submit" value="Отправить"></p>
+</form>
+ </body>
+</html>

@@ -1,0 +1,38 @@
+input[type="text"] {
+border-radius: 3px;
+}
+p.indent {
+margin: auto;
+}
+
+p.indent2 {
+	margin-top: auto;
+}
+
+
+th, td {border: 2px solid grey;
+		border-width: 1px;
+		padding: 4px;
+}
+
+.tab1 {
+		width: 1000px;
+		margin: auto;
+		border-collapse: separate;	
+		border: 2px solid grey;
+}
+.tab2 {
+	width: 600px;
+	margin: auto;
+	border-collapse: separate;	
+	border: 2px solid grey;
+}
+.tab3 {
+	width: 600px;
+	margin: auto;	
+	border-style: inset;
+	border-collapse: collapse;
+}
+.font {
+	font-weight: bold;
+}
